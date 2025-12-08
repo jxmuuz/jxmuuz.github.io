@@ -1,0 +1,87 @@
+
+header {
+ 
+text-align: center;
+padding: 10px;
+border: 3px solid #ffffff;
+border-radius: 30px;
+}
+
+body {
+font-family: 'FliegeMono-Thin';
+background: #ffc444;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-family: 'FliegeMono-Bold';
+
+}
+
+h2 
+{
+  color: #be6906;
+  text-align: center;
+  font-family: 'FliegeMono-Bold';
+}
+
+p {
+  color: #fff0dc;
+  font-family: 'FliegeMono-Thin' ; 
+  font-size: 20px;
+}
+
+  html {
+     height: auto;
+     min-height: 100%;
+  }
+
+  button {
+  background-color: #48bb78;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #38a169;
+}
+
+@font-face {                  
+font-family: 'FliegeMono-Thin';
+src: url(https://humantooth.neocities.org/fonts/FliegeMono-Thin.woff2) format('woff2');
+font-weight: normal;
+font-style: normal;
+} 
+
+@font-face {                  
+font-family: 'FliegeMono-Bold';
+src: url(https://github.com/PavelLaptev/Fliege-mono/blob/main/font/WOFF2/FliegeMono-Bold.woff2)  format('woff2'); 
+font-weight: bold;
+font-style: normal;
+font-size: larger;
+} 
+
+ul.topnav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.topnav li a {
+  display: block;
+  color: #f1f1f1;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+ul.topnav li a:hover {
+  background-color: #dddddd;
+  color: black;
+}
