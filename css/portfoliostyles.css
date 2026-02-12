@@ -1,89 +1,55 @@
 
-.header {
-  height: 300px; width: auto;
-padding: 100px;
-border: 1px solid #ffffff00;
-margin: auto;
-border-radius: 10px;
+header {
+ 
+text-align: right;
+margin: 10px;
+padding: 10px;
+
+border: 3px solid #ffffff;
+position: center ;
+
+border-radius: 80px;
 background: #ffffff;
-background: linear-gradient(180deg, rgb(164, 183, 243) 0%, rgb(90, 121, 179) 24%, rgb(186, 204, 236) 75%, #c3d5f7 100%);
-
-background-size: cover;
-transition: 0.3s;
-
-background-image: url(https://raw.githubusercontent.com/jxmuuz/jxmuuz.github.io/refs/heads/main/images/IMG_8832.jpg);
-
-}
-
-
-.headerabout {
-height: 300px;
-text-align: center;
-padding: 100px;
-border: 1px solid #ffffff00;
-box-shadow: 2px 2px 4px #08080823;
-border-radius: 10px;
-background: #ffffff;
-background: linear-gradient(180deg, rgb(164, 183, 243) 0%, rgb(90, 121, 179) 24%, rgb(186, 204, 236) 75%, #c3d5f7 100%);
+background: linear-gradient(180deg, rgb(214, 220, 240) 0%, rgb(28, 65, 133) 24%, rgb(75, 105, 156) 75%, #1a3463 100%);
  transition: 0.3s;
- background-image: url(/images/banner2.jpg); 
- background-size: cover;
 }
 
 
-
-ul {
-    list-style-position: inside;
-}
-  
-
-  li { 
-  text-align: center;
-   margin-left: 0;
-    padding-left: 0;
-    font-size: 20px;
-  }  
-
+ 
 
      .center {
-  height: auto;
+  width: auto;
   padding: 20px;
   border: 2.5px solid #ffffff;
   border-radius: 80px;
-  margin: 0px;
+  margin: 10px;
   text-align: center;
   flex: auto;
-  
     }
 
-
-    .chunk {
-  column-count: 3;
-}
-
-    
 body {
   font-family: "DM Mono", monospace;
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
-  color: #798bc0; 
-background: #ffffff;
-background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(200, 214, 250, 1) 96%);
+ 
+    color: #7d95dd;
+  background: #ffffff;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(200, 214, 250, 1) 96%);
+  
   font-size: 20px;
 
- flex: auto;
-   margin: 10px;
+  margin: 10px;
 
+  flex: auto;
 
   opacity: 0;
 
-  animation: fadeIn 2s forwards;
+  animation: fadeIn 1s forwards;
 
-  
+ 
 
    background-repeat: no-repeat;
   background-attachment: fixed;
-
   
     
 }
@@ -93,9 +59,7 @@ h1 {
   text-align: center;
   font-family: 'Bruno Ace', sans-serif;
   transition: 1.3s;
-  text-shadow: 2px 2px 4px #08080813;
-  font-size: 70px;
- 
+  text-shadow: 2px 2px 4px #00000044;
 
 
 }
@@ -106,20 +70,17 @@ h2
   text-align: center;
   font-family: 'DM Mono', monospace;
    transition: 1.3s;
-   text-shadow: 2px 2px 4px #6473b6;
+   text-shadow: 2px 2px 4px #000000;
   
 }
 
 p {
-  color: #6f90c9;
+    color: #6f90c9;
   font-family: "DM Mono", monospace;
-  font-weight: 100;
+  font-weight: 10;
   font-style: normal;
-  font-size: 18px;
+  font-size: 20px;
   transition: 0.3s;
-   margin: 20px;
-  
-  
 
 }
 
@@ -138,6 +99,13 @@ p {
 button:hover {
   background-color: #3869a1;
 }
+
+
+
+
+
+
+
 
 .dm-mono-light {
   font-family: "DM Mono", monospace;
@@ -234,6 +202,14 @@ background: linear-gradient(180deg, rgb(164, 183, 243) 0%, rgb(90, 121, 179) 24%
   animation: rotate 20s infinite linear; 
 }
 
+ .carousel {
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 700px;
+    overflow: hidden;
+    display: flex;
+    }
+
 @keyframes rotate {
  	0% {
 		transform: rotate(0deg);
@@ -254,17 +230,79 @@ background: linear-gradient(180deg, rgb(164, 183, 243) 0%, rgb(90, 121, 179) 24%
 
           }
 
- 
+          
+.group {
+    will-change: transform; 
+    animation: scrolling 10s linear infinite;
+  }
 
-footer  {
-  text-align: center;
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }          
+
+
+ .row > .column {
+  padding: 0 8px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+
+.imgshadow { 
+  filter: drop-shadow(-1px 1px 6px #000b22);
 }
 
 img {
-  float: left;
-  margin: 10px;
-  border-radius: 90px;
-}
+border-radius: 20px;
 
-.centertext
-{ text-align: center;}
+}

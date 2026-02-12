@@ -1,87 +1,60 @@
 
 .header {
-  height: 300px; width: auto;
+height: auto;
+text-align: center;
 padding: 100px;
 border: 1px solid #ffffff00;
 margin: auto;
 border-radius: 10px;
 background: #ffffff;
 background: linear-gradient(180deg, rgb(164, 183, 243) 0%, rgb(90, 121, 179) 24%, rgb(186, 204, 236) 75%, #c3d5f7 100%);
-
-background-size: cover;
 transition: 0.3s;
 
-background-image: url(https://raw.githubusercontent.com/jxmuuz/jxmuuz.github.io/refs/heads/main/images/IMG_8832.jpg);
-
-}
-
-
-.headerabout {
-height: 300px;
-text-align: center;
-padding: 100px;
-border: 1px solid #ffffff00;
-box-shadow: 2px 2px 4px #08080823;
-border-radius: 10px;
-background: #ffffff;
-background: linear-gradient(180deg, rgb(164, 183, 243) 0%, rgb(90, 121, 179) 24%, rgb(186, 204, 236) 75%, #c3d5f7 100%);
- transition: 0.3s;
- background-image: url(/images/banner2.jpg); 
- background-size: cover;
 }
 
 
 
-ul {
-    list-style-position: inside;
-}
-  
+    
 
-  li { 
-  text-align: center;
-   margin-left: 0;
-    padding-left: 0;
-    font-size: 20px;
-  }  
+
 
 
      .center {
   height: auto;
+
   padding: 20px;
-  border: 2.5px solid #ffffff;
+
   border-radius: 80px;
-  margin: 0px;
+  margin: 10px;
   text-align: center;
   flex: auto;
+ 
+
+
+ 
   
+ 
     }
 
 
-    .chunk {
-  column-count: 3;
-}
+  
+
 
     
 body {
   font-family: "DM Mono", monospace;
   font-weight: 100;
   font-style: normal;
-  color: #798bc0; 
+  color: #d8e2ff; 
 background: #ffffff;
 background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(200, 214, 250, 1) 96%);
   font-size: 20px;
-
- flex: auto;
+ 
+   flex: auto;
    margin: 10px;
 
-
-  opacity: 0;
-
   animation: fadeIn 2s forwards;
-
-  
-
-   background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 
   
@@ -96,17 +69,21 @@ h1 {
   text-shadow: 2px 2px 4px #08080813;
   font-size: 70px;
  
+  margin: auto;
 
 
 }
 
 h2 
 {
-  color: #dce6ff;
+    color: #7d95dd;
   text-align: center;
-  font-family: 'DM Mono', monospace;
-   transition: 1.3s;
-   text-shadow: 2px 2px 4px #6473b6;
+  font-family: 'Bruno Ace', sans-serif;
+  transition: 1.3s;
+  text-shadow: 2px 2px 4px #08080813;
+  font-size: 30px;
+ 
+  margin: auto;
   
 }
 
@@ -117,7 +94,7 @@ p {
   font-style: normal;
   font-size: 18px;
   transition: 0.3s;
-   margin: 20px;
+   margin: auto;
   
   
 
@@ -254,17 +231,88 @@ background: linear-gradient(180deg, rgb(164, 183, 243) 0%, rgb(90, 121, 179) 24%
 
           }
 
- 
+ .row > .column {
+  padding: 0 8px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+ /* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+} 
+
 
 footer  {
   text-align: center;
 }
 
 img {
-  float: left;
-  margin: 10px;
-  border-radius: 90px;
-}
 
-.centertext
-{ text-align: center;}
+right: 100px ;
+justify-content: space-evenly;
+
+
+
+  
+  }
+
